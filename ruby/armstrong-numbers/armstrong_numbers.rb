@@ -5,3 +5,9 @@ Write your code for the 'Armstrong Numbers' exercise in this file. Make the test
 To get started with TDD, see the `README.md` file in your
 `ruby/armstrong-numbers` directory.
 =end
+
+class ArmstrongNumbers
+  def self.include?(numbers)
+    numbers.digits.sum {|n| n**numbers.digits.size} == numbers
+  end
+end
